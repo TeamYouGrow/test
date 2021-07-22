@@ -14,7 +14,6 @@ let classifier;
 // Model URL
 let imageModelURL = 'https://teachablemachine.withgoogle.com/models/RgaDfB4xL/';
 
-
 // Video
 let video;
 let flippedVideo;
