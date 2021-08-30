@@ -26,7 +26,7 @@ function preload() {
 }
 
 function setup() {
-  var cnv = createCanvas(800, 800);
+  var cnv = createCanvas(600, 600);
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
@@ -41,7 +41,7 @@ function setup() {
   //But hide the live video to the user
   video.hide();
   //Set the size of the video (and image)
-  video.size(800, 800);
+  video.size(600, 600);
  
   
   flippedVideo = ml5.flipImage(video)
