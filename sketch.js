@@ -26,12 +26,24 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(320, 260);
-  // Create the video
-  video = createCapture(VIDEO);
-  video.size(320, 240);
+  var cnv = createCanvas(800, 800);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+ video =  createCapture({
+    audio: false,
+    video: {
+      facingMode: {
+        exact: "environment"
+      }
+    }
+  });
+  //But hide the live video to the user
   video.hide();
-
+  //Set the size of the video (and image)
+  video.size(800, 800);
+ 
+  
   flippedVideo = ml5.flipImage(video)
   // Start classifying
   classifyVideo();
