@@ -42,7 +42,7 @@ exact: "environment"
 video.hide();
 //Set the size of the video (and image)
 video.size(800, 800);
-flippedVideo = ml5.flipImage(video)
+flippedVideo = ml5.flipImage(video);
 // Start classifying
 classifyVideo();
 }
