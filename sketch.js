@@ -29,7 +29,20 @@ This example uses p5 preload function to create the classifier
   function setup() {
     createCanvas(320, 260);
     // Create the video
-    video = createCapture(VIDEO);
+      var constraints = {
+    audio: false,
+    video: {
+      facingMode: {
+        exact: "environment"
+      }
+    }    
+    //video: {
+      //facingMode: "user"
+    //} 
+  };
+  capture = createCapture(constraints);
+  
+  capture.hide();
     video.size(320, 240);
     video.hide();
 
