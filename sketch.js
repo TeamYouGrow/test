@@ -25,31 +25,29 @@ This example uses p5 preload function to create the classifier
   function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   }
+function setup() {
+var cnv = createCanvas(800, 800);
+var x = (windowWidth - width) / 2;
+var y = (windowHeight - height) / 2;
+cnv.position(x, y);
+video = createCapture({
+audio: false,
+video: {
+facingMode: {
+exact: "environment"
+}
+}
+});
+//But hide the live video to the user
+video.hide();
+//Set the size of the video (and image)
+video.size(800, 800);
+flippedVideo = ml5.flipImage(video)
+// Start classifying
+classifyVideo();
+}
 
-  function setup() {
-    createCanvas(320, 260);
-    // Create the video
-      var constraints = {
-    audio: false,
-    video: {
-      facingMode: {
-        exact: "environment"
-      }
-    }    
-    //video: {
-      //facingMode: "user"
-    //} 
-  };
-  capture = createCapture(constraints);
-  
-  capture.hide();
-    video.size(320, 240);
-    video.hide();
 
-    flippedVideo = ml5.flipImage(video);
-    // Start classifying
-    classifyVideo();
-  }
 
   function draw() {
     background(0);
