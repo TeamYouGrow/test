@@ -70,8 +70,7 @@ This example uses p5 preload function to create the classifier
     label = results[0].label;
     // Classifiy again!
     classifyVideo();
-  }
-</script>
+  
 
 if(label === "Tomato") {
   water = "123ml";
@@ -91,6 +90,5 @@ else if(label === "Aloe Vera") {
 else if(label === "Human") {
   water = "This is not a plant.";
 }
-  // Classifiy again!
-  classifyVideo();
+
 }
