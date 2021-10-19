@@ -10,15 +10,10 @@ This example uses p5 preload function to create the classifier
 === */
 
 // Classifier Variable
-<div>Teachable Machine Image Model - p5.js and ml5.js</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-<script type="text/javascript">
   // Classifier Variable
   let classifier;
   // Model URL
-  let imageModelURL = './my_model/';
+  let imageModelURL = 'https://teachablemachine.withgoogle.com/models/sKxs69PgB/';
   
   // Video
   let video;
