@@ -40,19 +40,21 @@ background-color: #E6E6FA;
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
+    <script src="sketch.js"></script>
  <script> 
      var elems= null;
      document.addEventListener('DOMContentLoaded', function() {
     elems = document.querySelector('#modal1');
     var instances = M.Modal.init(elems);
-    console.log(elems);
+    startSketch();
+         //console.log(elems);
       }); 
   //var instance = M.Modal.getInstance(elems);
   // Or with jQuery
 //window.onload = function(){instance.open();}
     
 </script>
-  <script src="sketch.js"></script>
+  
 
 
 
