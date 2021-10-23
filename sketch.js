@@ -8,8 +8,15 @@ ml5 Example
 Webcam Image Classification using a pre-trained customized model and p5.js
 This example uses p5 preload function to create the classifier
 === */
-function startSketch()
-{
+     var elems= null;
+     document.addEventListener('DOMContentLoaded', function() {
+    elems = document.querySelector('#modal1');
+    var instances = M.Modal.init(elems);
+         alert("Hello");
+    startSketch();
+         //console.log(elems);
+      
+   
  var instance = M.Modal.getInstance(elems);
 // Classifier Variable
   // Classifier Variable
@@ -107,4 +114,4 @@ else if(label === "Human") {
 }
 
 }
-}
+}); 
