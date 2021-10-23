@@ -14,7 +14,7 @@ This example uses p5 preload function to create the classifier
     var instances = M.Modal.init(elems);
     
          console.log(elems);
-      
+          }); 
    
  var instance = M.Modal.getInstance(elems);
 // Classifier Variable
@@ -32,7 +32,7 @@ This example uses p5 preload function to create the classifier
   // Load the model first
   function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
-       console.log("Nimeshhhhhhhh");
+       
   }
 function setup() {
 var cnv = createCanvas(800, 800);
@@ -114,4 +114,4 @@ else if(label === "Human") {
 }
 
 }
-}); 
+
