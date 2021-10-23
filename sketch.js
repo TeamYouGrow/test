@@ -34,7 +34,7 @@ video = createCapture({
 audio: false,
 video: {
 facingMode: {
-exact: "environment"
+exact: "user"
 }
 }
 });
