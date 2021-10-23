@@ -32,6 +32,7 @@ This example uses p5 preload function to create the classifier
   // Load the model first
   function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+       console.log("Nimeshhhhhhhh");
   }
 function setup() {
 var cnv = createCanvas(800, 800);
