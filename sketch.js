@@ -14,7 +14,7 @@ This example uses p5 preload function to create the classifier
     var instances = M.Modal.init(elems);
          alert("Hello");
     startSketch();
-         //console.log(elems);
+         console.log(elems);
       
    
  var instance = M.Modal.getInstance(elems);
