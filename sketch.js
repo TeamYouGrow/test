@@ -95,7 +95,7 @@ else if(label === "Basil") {
 }
 
 else if(label === "Aloe Vera") {
-  water = "012ml";
+  window.location.href ="video.html";
 }
 
 else if(label === "Human") {
