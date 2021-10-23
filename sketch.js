@@ -14,11 +14,12 @@ This example uses p5 preload function to create the classifier
      document.addEventListener('DOMContentLoaded', function() {
     elems = document.querySelector('#modal1');
     var instances = M.Modal.init(elems);
-    
+    var instance = M.Modal.getInstance(elems);
+          instance.open();
          console.log(elems);
           }); 
    
- //var instance = M.Modal.getInstance(elems);
+ //
 // Classifier Variable
   // Classifier Variable
   let classifier;
@@ -108,7 +109,7 @@ else if(label === "Basil") {
 else if(label === "Aloe Vera") {
   //window.location.href ="video.html";
        alert("Hello"); 
- //instance.open();
+ //
 }
 
 else if(label === "Human") {
