@@ -43,10 +43,11 @@ background-color: #E6E6FA;
   <script> document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems);
-  });
-  var instance = M.Modal.getInstance(elems);
+ instance.open();
+      }); 
+  //var instance = M.Modal.getInstance(elems);
   // Or with jQuery
-window.onload = function(){instance.open();}
+//window.onload = function(){instance.open();}
 
 </script>
   <script src="sketch.js"></script>
