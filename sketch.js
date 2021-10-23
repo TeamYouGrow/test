@@ -12,7 +12,6 @@ This example uses p5 preload function to create the classifier
      document.addEventListener('DOMContentLoaded', function() {
     elems = document.querySelector('#modal1');
     var instances = M.Modal.init(elems);
-         alert("Hello");
     
          console.log(elems);
       
