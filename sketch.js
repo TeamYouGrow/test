@@ -53,7 +53,7 @@ exact: "environment"
 //But hide the live video to the user
 video.hide();
 //Set the size of the video (and image)
-video.size(600, 600);
+video.size(800, 800);
 flippedVideo = ml5.flipImage(video);
 // Start classifying
 classifyVideo();
