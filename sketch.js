@@ -107,9 +107,9 @@ else if(label === "Basil") {
 }
 
 else if(label === "Aloe Vera") {
-  //window.location.href ="video.html";
+  window.location.href ="video.html";
        //alert("Hello"); 
-     instance.open();
+     //instance.open();
  //
 }
 
