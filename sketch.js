@@ -152,7 +152,7 @@ else if(label === "Tomato") {
   document.getElementById("modalt").innerHTML = modalTitle;
   document.getElementById("modalc").innerHTML = modalContent;
   document.getElementById("videoplayer").setAttribute("src", videoLink);
-  instance.open()
+  instance.open();
 }
 else if (label === "Fenugreek") {
      water = "456ml";
