@@ -94,24 +94,116 @@ classifyVideo();
     // Classifiy again!
     classifyVideo();
   
-
-if(label === "Tomato") {
-  water = "123ml";
+ if(label === "Snake Plant") {
+  //window.location.href ="video.html";
+       //alert("Hello");
+     modalTitle = "Snake Plant Tips";
+     modalContent = "Click the video above to get tips on how to grow your Snake plant, straight from an expert.";
+     videoLink = "https://youtube.com/embed/tzY-rJiMgqQ"
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
+     instance.open();
+ //
 }
-else if (label === "Fenugreek") {
-  water = "456ml";
-}
-
+       
 else if(label === "Basil") {
   water = "789ml";
+  modalTitle = "Basil Tips";
+  modalContent = "Click the video above to get tips on how to grow your Basil/Tulsi plant, straight from an expert.";
+  videoLink = "";
+  document.getElementById("modalt").innerHTML = modalTitle;
+  document.getElementById("modalc").innerHTML = modalContent;
+  document.getElementById("videoplayer").setAttribute("src", videoLink);
+  instance.open();
 }
 
 else if(label === "Aloe Vera") {
   //window.location.href ="video.html";
        //alert("Hello");
+     modalTitle = "Aloe Vera Tips";
+     modalContent = "Click the video above to get tips on how to grow your Aloe Vera plant, straight from an expert.";
+     videoLink = "https://youtube.com/embed/Q8FZnWXLyLs";
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
      instance.open();
  //
+} 
+       
+else if(label === "Lemongrass") {
+  //window.location.href ="video.html";
+       //alert("Hello");
+     modalTitle = "Lemongrass Tips";
+     modalContent = "Click the video above to get tips on how to grow your Lemongrass plant, straight from an expert.";
+     videoLink = "https://youtube/embed/xSkIluC6K38";
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
+     instance.open();
+ //
+}  
+           
+else if(label === "Tomato") {
+  water = "123ml";
+  modalTitle = "Tomato Tips";
+  modalContent = "Click the video above to get tips on how to grow your Tomato plant, straight from an expert.";
+  videoLink = "https://youtube/embed/NUuT--KDejU";
+  document.getElementById("modalt").innerHTML = modalTitle;
+  document.getElementById("modalc").innerHTML = modalContent;
+  document.getElementById("videoplayer").setAttribute("src", videoLink);
+  instance.open()
 }
+else if (label === "Fenugreek") {
+     water = "456ml";
+     modalTitle = "Fenugreek Tips";
+     modalContent = "Click the video above to get tips on how to grow your Fenugreek plant, straight from an expert.";
+     videoLink = "https://youtube.com/embed/_HFqtz0hIjA";
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
+     instance.open();
+}
+
+else if(label === "Money Plant") {
+  //window.location.href ="video.html";
+       //alert("Hello");
+     modalTitle = "Money Plant Tips";
+     modalContent = "Click the video above to get tips on how to grow your Money plant, straight from an expert.";
+     videoLink = "https://youtube.com/embed/5ySb2AD0rMs";
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
+     instance.open();
+ //
+}   
+       
+else if(label === "Orchid") {
+  //window.location.href ="video.html";
+       //alert("Hello");
+     modalTitle = "Orchid Tips";
+     modalContent = "Click the video above to get tips on how to grow your Orchid plant, straight from an expert.";
+     videoLink = "https://youtube.com/embed/me8XXE6J6LQ";
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
+     instance.open();
+ //
+}   
+       
+else if(label === "Coriander") {
+  //window.location.href ="video.html";
+       //alert("Hello");
+     modalTitle = "Coriander Tips";
+     modalContent = "Click the video above to get tips on how to grow your Coriander/Dhania plant, straight from an expert.";
+     videoLink = "https://youtube.com/embed/a8keJNYC8Wo";
+     document.getElementById("modalt").innerHTML = modalTitle;
+     document.getElementById("modalc").innerHTML = modalContent;
+     document.getElementById("videoplayer").setAttribute("src", videoLink);
+     instance.open();
+ //
+}     
+
 
 else if(label === "Human") {
   water = "This is not a plant.";
