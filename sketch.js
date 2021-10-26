@@ -109,8 +109,6 @@ else if(label === "Basil") {
 else if(label === "Aloe Vera") {
   //window.location.href ="video.html";
        //alert("Hello");
-     modalTitle = "Aloe Vera Tips";
-     modalContent =  "Click the video above to get tips on how to grow your Aloe Vera plant, straight from an expert.";
      instance.open();
  //
 }
